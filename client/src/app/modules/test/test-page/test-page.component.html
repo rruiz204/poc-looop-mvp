@@ -1,3 +1,7 @@
 <p>test-page works!</p>
-<p>Value: {{ value }}</p>
-<app-card-example></app-card-example>
+
+<div class="card-list">
+  @for (card of cards; track card.id) {
+    <app-card-example [title]="card.title" [description]="card.description" />
+  }
+</div>

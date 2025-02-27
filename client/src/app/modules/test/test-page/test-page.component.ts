@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card } from '../../../core/models/Card';
 import { CardExampleComponent } from '../../../shared/components/common/molecules/card-example/card-example.component';
 
 @Component({
@@ -9,5 +10,9 @@ import { CardExampleComponent } from '../../../shared/components/common/molecule
   styleUrl: './test-page.component.scss'
 })
 export class TestPageComponent {
-  public value: number = 100;
+  public readonly cards: Card[] = [
+    { id: 1, title: "First Card", description: "First card description" },
+    { id: 2, title: "Second Card", description: "Second card description" },
+    { id: 3, title: "Third Card", description: "Third card description" },
+  ];
 }
