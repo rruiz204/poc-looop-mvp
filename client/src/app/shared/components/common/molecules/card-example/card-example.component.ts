@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-card-example',
@@ -10,4 +10,10 @@ import { Component, input } from '@angular/core';
 export class CardExampleComponent {
   public readonly title = input.required<string>();
   public readonly description = input.required<string>();
+
+  public readonly sample = output<string>();
+
+  public emitMessage(): void {
+    this.sample.emit("Hello World!!");
+  };
 }
