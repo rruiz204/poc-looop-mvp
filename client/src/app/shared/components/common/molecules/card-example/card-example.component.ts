@@ -16,4 +16,8 @@ export class CardExampleComponent {
   public emitMessage(): void {
     this.sample.emit("Hello World!!");
   };
+
+  public ngOnInit(): void {
+    console.log("init lifecycle hook");
+  };
 }
