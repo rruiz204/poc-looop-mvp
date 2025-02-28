@@ -15,4 +15,8 @@ export class TestPageComponent {
     { id: 2, title: "Second Card", description: "Second card description" },
     { id: 3, title: "Third Card", description: "Third card description" },
   ];
+
+  public onSample(event: string): void {
+    console.log(event);
+  };
 }
