@@ -26,6 +26,7 @@
 
     "baseUrl": ".",
     "paths": {
+      "@Services/*": ["src/Infrastructure/Services/*"],
       "@Configs/*": ["src/Infrastructure/Configs/*"],
 
       "@Routers/*": ["src/Presentation/Routers/*"],
